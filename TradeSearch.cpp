@@ -23,7 +23,6 @@ int Variative_Reading(FILE* file1,
   int k = 0;
   char str[128];  // строка размером 128
   // STR = file1[k];
-
   for (k; k != feof(file1); k++) {
     fgets(str, 128, file1);  //записываем строку в файл
     printf("", str);         // Вывод строк для проверки
@@ -53,58 +52,13 @@ int Variative_Reading(FILE* file1,
             }
           }
         }
-
-        // int InputProcessing(int var) {
-        //  do {
-        //  switch (var) {
-        //  case 1:
-        //
-        //      printf("Поиск страны-экспортера по заданному товару...\n");
-        //	break;
-        // case 2:
-        //
-        //      printf("Общий объем экспорта товара по его названию...\n");
-        //	break;
-        // case 3:
-        //
-        //      printf("Поиск страны с наибольшим ассортиментом на
-        //      импорт...\n");
-        //	break;
-        // case 4:
-        //
-        //      printf("Поиск ранних операций от заданного значения...\n");
-        //	break;
-        // case 0:
-        // printf("Завершение программы...\n");
-        // return 0;
-        //        break;
-        //    default:
-        //    printf("Ввод некорректен. Проверьте ввод.\n");
-        //  break;
-        //    }
-        //  } while (var = 0);
-        // }
+      }
+    }
+  }
+}
 
         int main() {
           setlocale(LC_ALL, "RUS");
-          int k = 0;
-          char Product[10];
-          char Country[10];
-          int Volume[10];
-          int Day[10];
-          int Month[10];
-          int Year[10];
-          FILE* base_file;
-          base_file = fopen("base.txt", "r");
-          do {
-            AppScreen();
-            printf("Введите номер операции...\n");
-            scanf("%d", &k);
-            // InputProcessing(k);
-            printf("--------------------\n");
-            Variative_Reading(base_file, Product, Country, Volume, Day, Month,
-                              Year);
-          } while (k = 0);
-          printf(Product);
+   
           return (0);
         }
